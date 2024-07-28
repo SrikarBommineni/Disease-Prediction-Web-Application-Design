@@ -1,0 +1,157 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: #283593;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+nav a:hover {
+  background-color: #5c6bc0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin-right: 0%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+  margin-top: 0;
+}
+footer {
+  background-color: #283593;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+h1 a{
+  text-decoration: none;
+  color: white;
+}
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.picture {
+  flex: 0 0 500px; /* This keeps the image at 500px width */
+  margin: 0 20px;
+}
+.custom-button {
+  background-color: #283593;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.75s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.custom-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-button:hover {
+  background-color: #5c6bc0;
+  color: #fff;
+}
+
+.custom-button:active {
+  transform: scale(0.95);
+}
+
+.formpage{
+  padding-left: 0;
+}
+.form-select{
+  border-radius: 3px;
+  padding: 5px;
+  padding-right: 800px;
+  margin-left: 198px;
+  display: inline-block;
+}
+label{
+  padding: 20px;
+  margin: 20px;
+  margin-left: 180px;
+  font-size: 16px;
+}
+.container{
+  margin-left:198px;
+  
+}
+.mainf{
+  margin-left: 0px;
+  background-image: url(images/—Pngtree—ppt\ medical\ background\ blue\ border_963073.jpg);
+
+}
+.about{
+  font-style: normal;
+ 
+  justify-content: center;
+}
